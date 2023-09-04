@@ -1,0 +1,465 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>760</x><y>936</y><w>168</w><h>360</h></coordinates><panel_attributes>Funcionario
+--
+- nome
+- id
+- funcao
+- dataDeNascimento
+- email
+- telefone
+- cpf
+--
++ Funcionario()
++ getNome()
++ getId()
++ getFuncao()
++ getDataDeNascimento()
++ getEmail()
++ getTelefone()
++ getCpf()
++ setNome()
++ setId()
++ setFuncao()
++ setDataDeNascimento()
++ setEmail()
++ setTelefone()
++ setCpf()
+
+
+--
+Responsabilidade
+Armazenar informações sobre o
+funcionário</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1352</x><y>0</y><w>136</w><h>88</h></coordinates><panel_attributes>VerFaturamento
+--
+- tela
+--
++ mostrarFaturamento()
+--
+Responsabilidades
+Mostrar Faturamento</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>2032</y><w>168</w><h>96</h></coordinates><panel_attributes>VerRanking
+--
+- tela
+--
++ mostrarRanking()
+--
+Responsibilities
+Mostrar Ranking</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1352</x><y>160</y><w>136</w><h>152</h></coordinates><panel_attributes>Faturamento
+--
+- valorTotal
+- tempo: Periodo
+--
++ getValorTotal()
++ getTempo()
++ setValorTotal()
++ setTempo()
+--
+Responsabilidades
+Armazenar as informações
+do faturamento</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>448</x><y>1928</y><w>168</w><h>88</h></coordinates><panel_attributes>VerAnalise
+--
+- tela
+--
++ mostrarAnalise()
+--
+Responsabilidades
+Mostrar Analise
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1112</x><y>504</y><w>176</w><h>96</h></coordinates><panel_attributes>CalcularFaturamentoFuncionario
+--
+- historicoFuncionario
+--
+
+--
+Responsabilidades
+Calcular o faturamento 
+de um dado funcionario</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>448</x><y>2112</y><w>168</w><h>88</h></coordinates><panel_attributes>Analise
+--
+
+--
+# calcularAnalise()
+--
+Responsabilidades
+Calcular uma analise
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1336</x><y>504</y><w>176</w><h>96</h></coordinates><panel_attributes>CalcularFaturamentoEquipe
+--
+- historicoFuncionarios
+--
+
+--
+Responsabilidades
+Calcular o faturamento 
+de uma dada equipe</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1552</x><y>504</y><w>176</w><h>96</h></coordinates><panel_attributes>CalcularFaturamentoEmpresa
+--
+- historicoVendas
+--
+
+--
+Responsabilidades
+Calcular o faturamento 
+da empresa</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>256</x><y>2272</y><w>176</w><h>168</h></coordinates><panel_attributes>AnaliseFuncionario
+--
+- tipoCliente
+- tipoFuncionario
+- tipoCurso
+--
++getTipoCliente()
++getTipoFuncionario()
++getTipoCurso()
++setTipoCliente()
++setTipoFuncionario()
++setTipoCurso()
+--
+Responsabilidades
+Armazenar a Análise do Funcionário
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1336</x><y>360</y><w>176</w><h>64</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+CalcularFaturamento
+--
++ calcularFaturamento()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>448</x><y>2272</y><w>168</w><h>168</h></coordinates><panel_attributes>AnaliseCliente
+--
+- tipoCliente
+- tipoFuncionario
+- tipoCurso
+--
++getTipoCliente()
++getTipoFuncionario()
++getTipoCurso()
++setTipoCliente()
++setTipoFuncionario()
++setTipoCurso()
+--
+Responsabilidades
+Armazenar a Análise do Cliente</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>2272</y><w>168</w><h>168</h></coordinates><panel_attributes>AnaliseProduto
+--
+-tipoProduto
+-tipoFuncionario
+-tipoCliente
+--
++getTipoCliente()
++getTipoFuncionario()
++getTipoCurso()
++setTipoCliente()
++setTipoFuncionario()
++setTipoCurso()
+--
+Responsabilidades
+Armazenar a Análise do Produto</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1048</x><y>1088</y><w>168</w><h>88</h></coordinates><panel_attributes>ManterFuncionario
+--
+
+--
+
+--
+Responsabilidade
+Manutenção (CRUD) do Funcionario
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1640</x><y>2160</y><w>168</w><h>72</h></coordinates><panel_attributes>VerVenda
+--
+- tela
+--
++ mostrarPerfilDaVenda()
+--
+Mostrar Venda
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>64</x><y>1664</y><w>168</w><h>136</h></coordinates><panel_attributes>Login
+--
+-nomeDeUsuario
+-senha
+-idUsuario
+--
++getNomeDeUsuario()
++getSenha()
++getIdUsuario()
++setNomeDeUsuario()
++serSenha()
++setIdUsuario()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>984</x><y>1416</y><w>168</w><h>112</h></coordinates><panel_attributes>Gerente
+--
+- setor
+--
++ getSetor()
++ setSetor()
+--
+Responsabilidade
+Armazenar informações sobre o
+gerente</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>288</x><y>1464</y><w>168</w><h>88</h></coordinates><panel_attributes>GerarNotificacao
+--
+-flag
+--
+- monitorarBancoDeDados()
+- notificar()
+
+--
+Responsibilities
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1640</x><y>1480</y><w>168</w><h>88</h></coordinates><panel_attributes>ManterVenda
+--
+-flag
+--
+
+--
+Responsabilidades
+Manutenção (CRUD) da Venda
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1864</x><y>1616</y><w>168</w><h>280</h></coordinates><panel_attributes>Equipe
+--
+- id
+- nome
+- funcionarios
+- quantidadeDeFuncionarios
+- metaDaEquipe
+- pontuacao
+--
++ getId()
++ getNome()
++ getFuncionarios()
++ getQuantidadeDeFuncionarios()
++ getMetaDaEquipe()
++ getPontuacao()
++ setId()
++ setNome()
++ setFuncionarios()
++ setQuantidadeDeFuncionarios()
++ setMetaDaEquipe()
++ setPontuacao()
+--
+Responsabilidades
+Armazenar informações da Equipe</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1864</x><y>1480</y><w>168</w><h>88</h></coordinates><panel_attributes>ManterEquipe
+--
+
+--
+
+--
+Responsabilidades
+Manutenção (CRUD) da Equipe
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>288</x><y>1168</y><w>168</w><h>72</h></coordinates><panel_attributes>VerNotificacao
+--
+- tela
+--
++ mostrarNotificacao()
+--
+Responsibilities
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2312</x><y>2088</y><w>168</w><h>56</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+CalcularProgresso
+--
++ calcularProgresso()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2336</x><y>328</y><w>168</w><h>88</h></coordinates><panel_attributes>VerHistorico
+--
+- tela
+--
++ mostrarHistorico
+--
+Responsibilities
+Mostrar histórico
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2040</x><y>296</y><w>168</w><h>112</h></coordinates><panel_attributes>Historico
+--
+* registro
+* receita: Faturamento
+--
++ getRegistro()
++ setRegistro()
+todo
+--
+Responsibilities
+Armazenar um registro de informações</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2040</x><y>456</y><w>168</w><h>88</h></coordinates><panel_attributes>HistoricoVendas
+--
+
+--
+
+--
+Responsibilities
+Armazenar um registro de vendas
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2232</x><y>456</y><w>168</w><h>88</h></coordinates><panel_attributes>HistoricoDesempenhoFuncionario
+--
+
+--
+
+--
+Responsibilities
+Armazenar um registro de vendas
+de um funcionario</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>328</x><y>2176</y><w>136</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;10;10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>608</x><y>2176</y><w>144</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;160;10;160;120</additional_attributes></element><element><id>Relation</id><coordinates><x>528</x><y>2192</y><w>24</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>528</x><y>2008</y><w>24</w><h>120</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1416</x><y>416</y><w>24</w><h>104</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>1408</x><y>80</y><w>24</w><h>96</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1184</x><y>376</y><w>168</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>190;10;10;10;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>1504</x><y>376</y><w>160</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;180;10;180;160</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>1864</y><w>168</w><h>88</h></coordinates><panel_attributes>Ranking
+--
+
+--
++ ranquear()
+--
+Responsibilities
+Calcular ranking</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>72</x><y>1944</y><w>24</w><h>104</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>2112</x><y>400</y><w>24</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>2200</x><y>360</y><w>152</w><h>24</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2152</x><y>400</y><w>168</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;30;190;30;190;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>472</x><y>1064</y><w>168</w><h>80</h></coordinates><panel_attributes>VerFuncionario
+--
+- tela
+--
++ mostrarPerfilDoFuncionario()
+--
+Responsabilidade
+Ver informações do funcionário</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>920</x><y>1128</y><w>144</w><h>24</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;160;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2512</x><y>1480</y><w>168</w><h>88</h></coordinates><panel_attributes>VerMeta
+--
+- tela
+--
++ mostrarPerfilDaMeta()
+--
+Responsabilidades
+Mostrar Meta</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2312</x><y>1480</y><w>168</w><h>88</h></coordinates><panel_attributes>ManterMeta
+--
+
+--
+
+--
+Responsabilidades
+Manuntenção (CRUD) da Meta</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2312</x><y>1616</y><w>168</w><h>184</h></coordinates><panel_attributes>Meta
+--
+- id
+- periodo
+- interessados
+--
++ getId()
++ getPeriodo()
++ getInteressados()
++ setId()
++ setPeriodo()
++ setInteressados()
+# mensagemDaMeta()
+--
+todo vercomo flexibilizar
+Responsabilidades
+Armazenar Meta</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2392</x><y>1560</y><w>24</w><h>72</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1736</x><y>1184</y><w>176</w><h>88</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Manter
+--
++ criar()
++ ler()
++ editar()
++ deletar()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2472</x><y>1560</y><w>144</w><h>96</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;100;160;100;160;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>288</x><y>1280</y><w>168</w><h>144</h></coordinates><panel_attributes>Notificação
+--
+- meta
+- mensagem
+- idUsuario
+--
++ getMeta()
++ getMensagem()
++ getIdUsuario()
++ setMeta()
++ setMensagem()
++ setIdUsuario()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>1416</y><w>24</w><h>64</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>1232</y><w>24</w><h>64</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1640</x><y>1616</y><w>168</w><h>496</h></coordinates><panel_attributes>Venda
+--
+- id
+- cliente
+- sdr
+- closer
+- produto
+- data
+- valor
+- tipo
+- origem
+- meioDePagamento
+- deTerceiro: boolean
+- observacoes
+--
++ getId()
++ getCliente()
++ getSdr()
++ getCloser()
++ getProduto()
++ getData()
++ getValor()
++ getTipo()
++ getOrigem()
++ getMeioDePagamento()
++ getDeTerceiro()
++ getObservacoes()
++ setId()
++ setCliente()
++ setSdr()
++ setCloser()
++ setProduto()
++ setData()
++ setValor()
++ setTipo()
++ setOrigem()
++ setMeioDePagamento()
++ setDeTerceiro()
++ setObservacoes()
+--
+Responsabilidades
+Armazenar informações da Venda
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1720</x><y>2104</y><w>24</w><h>72</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>1720</x><y>1560</y><w>24</w><h>72</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>64</x><y>1552</y><w>168</w><h>56</h></coordinates><panel_attributes>VerLogin
+--
+- tela
+--
++ mostrarLogin()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>144</x><y>1600</y><w>24</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1864</x><y>1944</y><w>168</w><h>72</h></coordinates><panel_attributes>VerEquipe
+--
+- tela
+--
++ mostrarPerfilDaEquipe()
+--
+Mostrar Equipe
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1936</x><y>1888</y><w>24</w><h>72</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>1936</x><y>1560</y><w>24</w><h>72</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>632</x><y>1128</y><w>144</w><h>24</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>160;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>536</x><y>1416</y><w>168</w><h>120</h></coordinates><panel_attributes>Closer
+--
+- numeroDeVendas
+--
++ getNumeroDeVendas()
++ setNumeroDeVendas()
+--
+Responsabilidade
+Armazenar informações sobre o
+closer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>1416</y><w>168</w><h>120</h></coordinates><panel_attributes>SDR
+--
+- numeroDeAssistencias
+--
++ getNumeroDeAssistencias()
++ setNumeroDeAssistencias()
+--
+Responsabilidade
+Armazenar informações sobre o
+SDR</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>920</x><y>1256</y><w>160</w><h>176</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;180;10;180;200</additional_attributes></element><element><id>Relation</id><coordinates><x>616</x><y>1256</y><w>160</w><h>176</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>180;10;10;10;10;200</additional_attributes></element><element><id>Relation</id><coordinates><x>832</x><y>1288</y><w>24</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>1208</x><y>1128</y><w>544</w><h>104</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>660;110;310;110;310;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1704</x><y>1264</y><w>88</w><h>232</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>90;10;90;190;10;190;10;270</additional_attributes></element><element><id>Relation</id><coordinates><x>1856</x><y>1264</y><w>104</w><h>232</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;190;110;190;110;270</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2368</x><y>1184</y><w>168</w><h>32</h></coordinates><panel_attributes>Cliente
+--
+- id</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2368</x><y>1328</y><w>168</w><h>32</h></coordinates><panel_attributes>tipoDeVenda
+--
+- enum tiposDeVenda</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2368</x><y>1256</y><w>168</w><h>32</h></coordinates><panel_attributes>Produto
+--
+- id
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1992</x><y>1256</y><w>168</w><h>32</h></coordinates><panel_attributes>origemDaVenda
+--
+- enum origemDaVenda</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2184</x><y>1296</y><w>168</w><h>32</h></coordinates><panel_attributes>meioDePagamento
+--
+- enum tiposDePagamento</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2176</x><y>1216</y><w>168</w><h>32</h></coordinates><panel_attributes>Pontuacao
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1880</x><y>1264</y><w>536</w><h>232</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;170;650;170;650;270</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2104</x><y>1832</y><w>168</w><h>32</h></coordinates><panel_attributes>MetaCloser
+--
+- valor</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2312</x><y>1832</y><w>168</w><h>32</h></coordinates><panel_attributes>MetaSDR
+--
+- numeroDeAssistencias</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2520</x><y>1832</y><w>168</w><h>48</h></coordinates><panel_attributes>MetaEquipe
+--
+- metaDeValor
+- metaDeAssistencias</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2168</x><y>1656</y><w>160</w><h>192</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>180;10;10;10;10;220</additional_attributes></element><element><id>Relation</id><coordinates><x>2472</x><y>1656</y><w>144</w><h>192</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;160;10;160;220</additional_attributes></element><element><id>Relation</id><coordinates><x>2384</x><y>1792</y><w>24</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2336</x><y>184</y><w>168</w><h>88</h></coordinates><panel_attributes>ManterHistorico
+--
+
+--
++ adicionarRegistro()
+--
+Responsibilities
+Manutenção (CRUD) do Historico</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2120</x><y>216</y><w>232</w><h>96</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;100;10;10;270;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1872</x><y>216</y><w>688</w><h>984</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;1210;10;740;840;740;840;10;790;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1408</x><y>304</y><w>24</w><h>72</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>1416</x><y>536</y><w>520</w><h>232</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>630;10;630;270;10;270;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1840</x><y>456</y><w>168</w><h>88</h></coordinates><panel_attributes>HistoricoEquipe
+--
+
+--
+
+--
+Responsibilities
+Armazenar um registro de vendas
+de uma equipe
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1912</x><y>400</y><w>168</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>190;10;190;30;10;30;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>1176</x><y>536</y><w>1160</w><h>256</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>1430;10;1430;300;10;290;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>1616</x><y>536</y><w>520</w><h>208</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>630;10;630;240;10;240;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>1480</x><y>232</y><w>576</w><h>136</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;490;10;490;150;700;150</additional_attributes></element><element><id>Relation</id><coordinates><x>448</x><y>1344</y><w>1880</w><h>1064</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>2330;450;2030;450;2030;1310;1000;1310;1000;360;50;360;50;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2104</x><y>1952</y><w>168</w><h>72</h></coordinates><panel_attributes>CalcularProgressoCloser
+--
+- objetivo : MetaCloser
+--
+
+--
+Responsibilities
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2312</x><y>1952</y><w>168</w><h>72</h></coordinates><panel_attributes>CalcularProgressoSDR
+--
+- objetivo : MetaSDR
+--
+ 
+--
+Responsibilities
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2520</x><y>1952</y><w>168</w><h>72</h></coordinates><panel_attributes>CalcularProgressoEquipe
+--
+- objetivo : MetaSDR
+--
+ 
+--
+Responsibilities
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2176</x><y>2016</y><w>152</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>170;120;10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2472</x><y>2016</y><w>144</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;120;160;120;160;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2384</x><y>2016</y><w>24</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2176</x><y>1856</y><w>24</w><h>112</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>2384</x><y>1856</y><w>24</w><h>112</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>2592</x><y>1872</y><w>24</w><h>96</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>2384</x><y>1560</y><w>384</w><h>640</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;730;10;780;460;780;460;110;280;110;280;10</additional_attributes></element></diagram>
